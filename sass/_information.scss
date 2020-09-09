@@ -1,0 +1,22 @@
+.information {
+    text-align: justify;
+    padding: 50px 80px;
+    text-indent: 70px;
+    
+    h2 {
+        text-align: center;
+        text-indent: 0;
+    }
+
+    
+
+}
+
+.information-light {
+    background-color: $lightInformationBackColor;
+    color: $lightInformationColor;
+}
+.information-dark {
+    background-color: $darkInformationBackColor;
+    color: $darkInformationColor;
+}

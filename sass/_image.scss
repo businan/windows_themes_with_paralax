@@ -1,0 +1,39 @@
+.imagecontainer {
+  position: relative;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    padding: 20px;
+    color: $imageContainerTextColor;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+}
+
+.image1 {
+  @include background("./images/Image1.jpg");
+  min-height: 100%;
+  p {
+    background-color: $firstAndLastImageBackColor;
+  }
+}
+.image2 {
+  @include background("./images/Image2.jpg");
+  min-height: 400px;
+}
+.image3 {
+  @include background("./images/Image3.jpg");
+  min-height: 400px;
+}
+
+@media (max-width:480px){
+    .imagecontainer {
+        background-attachment: scroll;
+    }
+        
+        
+}
