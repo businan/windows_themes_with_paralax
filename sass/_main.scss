@@ -10,3 +10,10 @@ body, html {
   color: $mainColor;
 
 }
+
+@media (max-width: 480px) {
+  body, html {
+    font-size: $mobileFontSize;
+    line-height: $mobuleLineHeight;
+  }
+}
