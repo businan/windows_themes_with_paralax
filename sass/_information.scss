@@ -1,11 +1,20 @@
 .information {
     text-align: justify;
-    padding: 50px 80px;
+    padding: 40px 80px;
     text-indent: 70px;
     
     h2 {
         text-align: center;
         text-indent: 0;
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    p {
+        font-weight: 500;
     }
 
     
@@ -17,6 +26,6 @@
     color: $lightInformationColor;
 }
 .information-dark {
-    background-color: $darkInformationBackColor;
-    color: $darkInformationColor;
+    background-color: $lightInformationBackColor;
+    color: $lightInformationColor;
 }

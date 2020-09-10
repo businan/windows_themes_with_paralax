@@ -2,38 +2,58 @@
   position: relative;
   opacity: 0.75;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-
+  min-height: 70%;
   p {
     padding: 20px;
+    margin: 0;
     color: $imageContainerTextColor;
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.2rem;
     text-transform: uppercase;
+    text-align: center;
+    background-color: $firstAndLastImageBackColor;
+    border-radius: 20px;
+  }
+}
+#special {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 20px;
+
+  p {
+    text-transform: none;
   }
 }
 
 .image1 {
-  @include background("./images/Image1.jpg");
+  @include background("./images/11.jpg");
   min-height: 100%;
-  p {
-    background-color: $firstAndLastImageBackColor;
-  }
 }
 .image2 {
-  @include background("./images/Image2.jpg");
-  min-height: 400px;
+  @include background("./images/12.jpg");
 }
 .image3 {
-  @include background("./images/Image3.jpg");
-  min-height: 400px;
+  @include background("./images/13.jpg");
+}
+.image4 {
+  @include background("./images/14.jpg");
+}
+.image5 {
+  @include background("./images/15.jpg");
+}
+.image6 {
+  @include background("./images/16.jpg");
+}
+.image7 {
+  @include background("./images/17.jpg");
 }
 
-@media (max-width:480px){
-    .imagecontainer {
-        background-attachment: scroll;
-    }
-        
-        
+@media (max-width: 480px) {
+  .imagecontainer {
+    background-attachment: scroll;
+  }
 }

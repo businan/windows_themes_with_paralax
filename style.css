@@ -14,45 +14,88 @@ body, html {
   position: relative;
   opacity: 0.75;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  min-height: 70%;
 }
 .imagecontainer p {
   padding: 20px;
+  margin: 0;
   color: #fff;
-  font-size: 2rem;
-  letter-spacing: 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.2rem;
   text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(24, 22, 22, 0.6);
+  border-radius: 20px;
+}
+
+#special {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+#special p {
+  text-transform: none;
 }
 
 .image1 {
-  background-image: url("./images/Image1.jpg");
+  background-image: url("./images/11.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
 }
-.image1 p {
-  background-color: #1f1e1e;
-}
 
 .image2 {
-  background-image: url("./images/Image2.jpg");
+  background-image: url("./images/12.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 400px;
 }
 
 .image3 {
-  background-image: url("./images/Image3.jpg");
+  background-image: url("./images/13.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 400px;
+}
+
+.image4 {
+  background-image: url("./images/14.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image5 {
+  background-image: url("./images/15.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image6 {
+  background-image: url("./images/16.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image7 {
+  background-image: url("./images/17.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (max-width: 480px) {
@@ -62,22 +105,31 @@ body, html {
 }
 .information {
   text-align: justify;
-  padding: 50px 80px;
+  padding: 40px 80px;
   text-indent: 70px;
 }
 .information h2 {
   text-align: center;
   text-indent: 0;
 }
+.information h2 a {
+  text-decoration: none;
+}
+.information h2 a:hover {
+  text-decoration: underline;
+}
+.information p {
+  font-weight: 500;
+}
 
 .information-light {
-  background-color: #f4f4f4;
-  color: #666;
+  background-color: rgba(223, 219, 219, 0.8);
+  color: #5f5b5b;
 }
 
 .information-dark {
-  background-color: #282e34;
-  color: #ddd;
+  background-color: rgba(223, 219, 219, 0.8);
+  color: #5f5b5b;
 }
 
 /*# sourceMappingURL=style.css.map */
